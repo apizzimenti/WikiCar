@@ -1,0 +1,56 @@
+{ //https://developer.chrome.com/extensions/manifest
+    // --required--
+    "name": "wikiCar",
+    "version": "4.2.0", //increasing version tells chrome when to update
+    "manifest_version": 2,
+    // --optional--
+    "description" : "wikipedia races with carssssssssssssss",
+    
+     "icons": {
+        "19": "images/Toolbar Icon.png",
+        "128": "images/Store Icon.png"        
+    },
+    
+    "browser_action": { //Allows an icon to be placed on window when a certain event is triggered https://developer.chrome.com/extensions/pageAction
+        "default_icon": "images/Toolbar Icon.png",           // optional
+        "default_title": "BJROIPSHF",      // optional; shown in tooltip
+        "default_popup": "popup.html",        // optional
+        "default_css": "popup.css"
+    }, // Chrome 5
+
+
+ //Allows access to certain libraries; will be most useful when implementing to Wiki https://developer.chrome.com/extensions/declare_permissions
+    "permissions": [ 
+        "activeTab",
+        "declarativeContent",
+        "tabs", // Chrome 5
+        "webNavigation", // Chrome 16
+        "https://ajax.googleapis.com/",
+        "https://en.wikipedia.org/"
+    ],
+    
+    "web_accessible_resources": [
+        "Images/*",
+        "ikeCar.js",
+        "test.js",
+        "background.js",
+        "popup.html",
+        "popup.js",
+        "contentscript.js",
+        "Sounds/*",
+        "styles.*",
+        "timer.js",
+        "styles.css",
+        "cursor.js",
+        "coin.js",
+        "startbutton.js",
+        "pageSelect.js"
+    ],
+    
+    "content_scripts": [{
+        "matches": ["*://en.wikipedia.org/wiki/*"],
+        "js": ["jquery-1.11.3.js", "ikeCar.js", "cursor.js", "coin.js", "storage.js", "startbutton.js", "pageSelect.js"],
+        "css":["styles.css"]
+    }]
+}
+    
