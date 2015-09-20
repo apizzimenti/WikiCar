@@ -2,14 +2,32 @@
     z-index: 2
     position: absolute
     
-html:hover
+#content:hover
     cursor: none
 
 #coin, #coin2, #coin3
     position: absolute
     z-index: 2
     
-#playButton
+#1, #quit
     width: auto
     height: auto
     font-size: 11px
+    border: none
+    background-color: white
+    
+    &:hover
+        cursor: pointer
+    
+#notif
+    width: 200px
+    height: auto
+    text-align: left
+    position: fixed
+    background-color: white
+    padding: 5px
+    border: 1px solid black
+    
+    #pts, #time, #location
+        font-size: 11px
+        

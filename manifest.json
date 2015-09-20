@@ -44,12 +44,14 @@
         "cursor.js",
         "coin.js",
         "startbutton.js",
-        "pageSelect.js"
+        "pageSelect.js",
+        "result.js",
+        "header.js"
     ],
     
     "content_scripts": [{
         "matches": ["*://en.wikipedia.org/wiki/*"],
-        "js": ["jquery-1.11.3.js", "ikeCar.js", "cursor.js", "coin.js", "storage.js", "startbutton.js", "pageSelect.js"],
+        "js": ["jquery-1.11.3.js", "ikeCar.js", "cursor.js", "coin.js", "storage.js", "pageSelect.js", "result.js", "startbutton.js", "header.js"],
         "css":["styles.css"]
     }]
 }

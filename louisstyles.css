@@ -32,6 +32,11 @@
     outline: 2px solid gray;
 }
 
+#2{
+    text-decoration: none;
+    color: black;
+}   
+
 .title{
     font-size: 72px;
     font-family:"Hoefler Text", "Times New Roman", "Times New Roman", "Times", "serif";
@@ -58,7 +63,7 @@
     position: absolute;
     float: right;
     left: 15px;
-    bottom: 150px;    
+    bottom: 100px;    
 }
 
 

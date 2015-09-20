@@ -1,0 +1,32 @@
+#car {
+  z-index: 2;
+  position: absolute; }
+
+#content:hover {
+  cursor: none; }
+
+#coin, #coin2, #coin3 {
+  position: absolute;
+  z-index: 2; }
+
+#1, #quit {
+  width: auto;
+  height: auto;
+  font-size: 11px;
+  border: none;
+  background-color: white; }
+  #1:hover, #quit:hover {
+    cursor: pointer; }
+
+#notif {
+  width: 200px;
+  height: auto;
+  text-align: left;
+  position: fixed;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid black; }
+  #notif #pts, #notif #time, #notif #location {
+    font-size: 11px; }
+
+/*# sourceMappingURL=styles.css.map */
